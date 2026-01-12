@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/toast_background"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- Loader -->
+    <ProgressBar
+        android:id="@+id/toast_loader"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        style="?android:attr/progressBarStyleSmall"/>
+
+    <!-- Success Icon -->
+    <ImageView
+        android:id="@+id/toast_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="4dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_success"/>
+
+    <!-- Text -->
+    <TextView
+        android:id="@+id/toast_text"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
